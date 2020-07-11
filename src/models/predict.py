@@ -1,3 +1,5 @@
+from typing import List
+
 import gensim
 
 def predict(tokens: List[str]):

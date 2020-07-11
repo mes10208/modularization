@@ -1,4 +1,4 @@
-from typing import List
+from typing import Generator, List
 
 import re
 import gensim
@@ -49,7 +49,7 @@ def make_trigrams(texts: List[List[str]]) -> List[List[str]]:
 # Lematización basada en el modelo de POS de Spacy
 def lemmatization(nlp: English, texts: List[List[str]], allowed_postags: List = None) -> List[List[str]]:
 	if allowed_postags is None:
-        allowed_postags = ['NOUN', 'ADJ', 'VERB', 'ADV']
+		allowed_postags = ['NOUN', 'ADJ', 'VERB', 'ADV']
 	"""https://spacy.io/api/annotation"""
 	texts_out = []
 	for sent in texts:
