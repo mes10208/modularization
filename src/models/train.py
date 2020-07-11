@@ -23,5 +23,5 @@ def train():
 		alpha='auto',
 		per_word_topics=True)
 
-	lda_model.save("../../data/models/lda_model.pkl")
+	lda_model.save("data/models/lda_model.pkl")
 	##logging.info('Model saved to artifact lda_model.pkl')
